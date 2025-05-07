@@ -44,10 +44,10 @@ If the build fails, run Maven with detailed logging to diagnose the problem:
 
 Building and Running the Docker Image
 
-        docker build -t rakeshperala:latest .
+        docker build -t perala:latest .
 
 Run the Docker Container:
 
-        docker run -p 8080:8080 rakeshperala:latest
+        docker run -p 8080:8080 perala:latest
 
         
