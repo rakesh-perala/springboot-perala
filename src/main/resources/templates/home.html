@@ -1,105 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to DevOps Factory</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(135deg, #ff7e5f, #feb47b);
-            color: #333;
-            text-align: center;
-        }
-        header {
-            background: #3f51b5;
-            color: #ffffff;
-            padding: 40px 20px;
-            border-bottom: 6px solid #303f9f;
-        }
-        h1 {
-            font-size: 3.5em;
-            margin: 0;
-            font-weight: bold;
-        }
-        p {
-            font-size: 1.3em;
-            margin: 20px 0;
-            color: #ffffff;
-        }
-        footer {
-            background: #4caf50;
-            color: #ffffff;
-            padding: 20px 0;
-            border-top: 6px solid #388e3c;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-        a {
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .cta-button {
-            display: inline-block;
-            padding: 12px 24px;
-            font-size: 1.2em;
-            color: #ffffff;
-            background-color: #ff5722;
-            border-radius: 8px;
-            text-decoration: none;
-            margin: 20px 10px;
-            transition: background-color 0.3s ease;
-        }
-        .cta-button:hover {
-            background-color: #e64a19;
-        }
-        .social-buttons {
-            margin-top: 20px;
-        }
-        .social-button {
-            display: inline-block;
-            padding: 12px 20px;
-            font-size: 1.1em;
-            color: #ffffff;
-            border-radius: 8px;
-            text-decoration: none;
-            margin: 10px;
-            transition: background-color 0.3s ease;
-        }
-        .github-button {
-            background-color: #333;
-        }
-        .github-button:hover {
-            background-color: #555;
-        }
-        .youtube-button {
-            background-color: #c4302b;
-        }
-        .youtube-button:hover {
-            background-color: #a5271e;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome to DevOps Factory</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:#fff;
+    text-align:center;
+}
+
+/* HEADER */
+header{
+    padding:50px 20px;
+}
+
+header h1{
+    font-size:3rem;
+    letter-spacing:1px;
+    color:#00e5ff;
+}
+
+/* HERO IMAGE */
+.hero-img{
+    margin-top:20px;
+}
+
+.hero-img img{
+    width:260px;
+    max-width:90%;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.6);
+}
+
+/* CARD */
+.container{
+    max-width:900px;
+    margin:40px auto;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    border-radius:20px;
+    padding:40px 20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+
+.container p{
+    font-size:1.2rem;
+    margin:15px 0;
+    color:#e0f7fa;
+}
+
+/* BUTTONS */
+.cta-button{
+    display:inline-block;
+    padding:14px 26px;
+    margin:12px;
+    border-radius:10px;
+    font-size:1.1rem;
+    font-weight:bold;
+    text-decoration:none;
+    color:#fff;
+    transition:0.3s ease;
+}
+
+.github-button{ background:#24292e; }
+.github-button:hover{ background:#3a3f44; transform:translateY(-3px); }
+
+.youtube-button{ background:#ff0000; }
+.youtube-button:hover{ background:#cc0000; transform:translateY(-3px); }
+
+.linkedin-button{ background:#0077b5; }
+.linkedin-button:hover{ background:#005f8e; transform:translateY(-3px); }
+
+/* PROFILE */
+.profile{
+    margin-top:30px;
+}
+
+.profile img{
+    width:160px;
+    height:160px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid #00e5ff;
+    box-shadow:0 8px 25px rgba(0,0,0,0.5);
+}
+
+/* FOOTER */
+footer{
+    margin-top:60px;
+    padding:20px;
+    background:#020c1b;
+    color:#aaa;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+    header h1{
+        font-size:2.2rem;
+    }
+}
+</style>
 </head>
+
 <body>
-    <header>
-        <h1>Welcome to DevOps Factory</h1>
-    </header>
-    <div>
-        <p>Thank you for visiting our Spring Boot application. We are thrilled to share our project with you!</p>
-        <p>Explore more and connect with us:</p>
-        <a href="https://github.com/rakesh-perala" class="cta-button" target="_blank">Visit GitHub Page</a>
-        <a href="https://www.youtube.com/@DevOps_Factory" class="cta-button youtube-button" target="_blank">Visit YouTube Channel</a>
-        <a href="https://www.linkedin.com/in/rakesh-perala-95a643321" class="cta-button linkedin-button" target="_blank">Visit LinkedIn Profile</a>
+
+<header>
+    <h1>🚀 Welcome to DevOps Factory</h1>
+
+    <!-- 🔥 YOUR FIRST IMAGE -->
+    <div class="hero-img">
+        <img src="banner-image.png" alt="DevOps Trainer">
     </div>
-    <footer>
-        <p>&copy; 2024 DevOps Factory. All rights reserved.</p>
-    </footer>
+</header>
+
+<div class="container">
+    <p>
+        Thank you for visiting our Spring Boot application.
+        We are thrilled to share our DevOps journey with you!
+    </p>
+
+    <p><strong>Explore more and connect with us:</strong></p>
+
+    <a href="https://github.com/rakesh-perala" 
+       class="cta-button github-button" target="_blank">
+       🔗 Visit GitHub
+    </a>
+
+    <a href="https://www.youtube.com/@DevOps_Factory" 
+       class="cta-button youtube-button" target="_blank">
+       ▶️ Visit YouTube
+    </a>
+
+    <a href="https://www.linkedin.com/in/rakesh-perala-95a643321" 
+       class="cta-button linkedin-button" target="_blank">
+       💼 Visit LinkedIn
+    </a>
+
+    <!-- 🔥 YOUR SECOND IMAGE -->
+    <div class="profile">
+        <img src="profile-image.png" alt="Rakesh Perala">
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 DevOps Factory. Built with ❤️ for Cloud & DevOps learners.</p>
+</footer>
+
 </body>
 </html>
