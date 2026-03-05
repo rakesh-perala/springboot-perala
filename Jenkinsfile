@@ -48,7 +48,7 @@ pipeline {
         }
         stage('Docker build and tag') {
             steps {
-                sh "docker build -t fir3eye/springboot1:latest ."
+                sh "docker build -t perala/springboot1:latest ."
             }
         }
         stage('Trivy image Scan') {
