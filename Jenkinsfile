@@ -53,14 +53,14 @@ pipeline {
         }
         stage('Trivy image Scan') {
             steps {
-                sh "trivy image fir3eye/springboot1:latest --format table -o image.html"
+                sh "trivy image perala/springboot1:latest --format table -o image.html"
             }
         }
         stage('Docker Push Image') {
             steps {
                 script{
                     withDockerRegistry(credentialsId: 'dockerhub') {
-                        sh "docker push fir3eye/springboot1:latest"
+                        sh "docker push docker-perala/springboot1:latest"
                   }
                 }
             }
