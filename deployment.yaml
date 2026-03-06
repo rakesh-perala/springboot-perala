@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: springboot-app
-        image: rakesh/springboot1:latest
+        image: dockerperala/springboot1:latest
         ports:
-        - containerPort: 8080
+        - containerPort: 8081
 
