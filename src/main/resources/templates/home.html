@@ -5,12 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Welcome to DevOps Factory</title>
 
+<!-- Social Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: 'Segoe UI', Arial, sans-serif;
+    font-family:'Segoe UI', Arial, sans-serif;
 }
 
 body{
@@ -20,19 +24,26 @@ body{
 }
 
 /* HEADER */
+
 header{
     padding:50px 20px;
 }
 
 header h1{
     font-size:3rem;
-    letter-spacing:1px;
     color:#00e5ff;
 }
 
+.tagline{
+    margin-top:10px;
+    font-size:1.3rem;
+    color:#b2ebf2;
+}
+
 /* HERO IMAGE */
+
 .hero-img{
-    margin-top:20px;
+    margin-top:25px;
 }
 
 .hero-img img{
@@ -43,6 +54,7 @@ header h1{
 }
 
 /* CARD */
+
 .container{
     max-width:900px;
     margin:40px auto;
@@ -59,29 +71,82 @@ header h1{
     color:#e0f7fa;
 }
 
-/* BUTTONS */
+/* SOCIAL BUTTONS */
+
 .cta-button{
     display:inline-block;
-    padding:14px 26px;
+    padding:14px 28px;
     margin:12px;
-    border-radius:10px;
+    border-radius:50px;
     font-size:1.1rem;
     font-weight:bold;
     text-decoration:none;
     color:#fff;
-    transition:0.3s ease;
+    transition:all 0.3s ease;
+    box-shadow:0 0 10px rgba(0,0,0,0.4);
 }
 
-.github-button{ background:#24292e; }
-.github-button:hover{ background:#3a3f44; transform:translateY(-3px); }
+.cta-button i{
+    margin-right:8px;
+}
 
-.youtube-button{ background:#ff0000; }
-.youtube-button:hover{ background:#cc0000; transform:translateY(-3px); }
+/* GitHub */
 
-.linkedin-button{ background:#0077b5; }
-.linkedin-button:hover{ background:#005f8e; transform:translateY(-3px); }
+.github-button{
+    background:#24292e;
+}
 
-/* PROFILE */
+.github-button:hover{
+    box-shadow:0 0 20px #24292e;
+    transform:translateY(-4px);
+}
+
+/* YouTube */
+
+.youtube-button{
+    background:#ff0000;
+}
+
+.youtube-button:hover{
+    box-shadow:0 0 20px red;
+    transform:translateY(-4px);
+}
+
+/* LinkedIn */
+
+.linkedin-button{
+    background:#0077b5;
+}
+
+.linkedin-button:hover{
+    box-shadow:0 0 20px #0077b5;
+    transform:translateY(-4px);
+}
+
+/* Instagram */
+
+.instagram-button{
+    background:linear-gradient(45deg,#f9ce34,#ee2a7b,#6228d7);
+}
+
+.instagram-button:hover{
+    box-shadow:0 0 20px #ee2a7b;
+    transform:translateY(-4px);
+}
+
+/* Facebook */
+
+.facebook-button{
+    background:#1877F2;
+}
+
+.facebook-button:hover{
+    box-shadow:0 0 20px #1877F2;
+    transform:translateY(-4px);
+}
+
+/* PROFILE IMAGE */
+
 .profile{
     margin-top:30px;
 }
@@ -96,6 +161,7 @@ header h1{
 }
 
 /* FOOTER */
+
 footer{
     margin-top:60px;
     padding:20px;
@@ -104,56 +170,75 @@ footer{
 }
 
 /* MOBILE */
+
 @media(max-width:768px){
-    header h1{
-        font-size:2.2rem;
-    }
+
+header h1{
+    font-size:2.2rem;
 }
+
+.tagline{
+    font-size:1.1rem;
+}
+
+}
+
 </style>
 </head>
 
 <body>
 
 <header>
-    <h1>🚀 Welcome to DevOps Factory</h1>
 
-    <!-- 🔥 YOUR FIRST IMAGE -->
-    <div class="hero-img">
-        <img src="banner-image.png" alt="DevOps Trainer">
-    </div>
+<h1>🚀 Welcome to DevOps Factory</h1>
+
+<p class="tagline">
+Learn DevOps • Docker • Kubernetes • CI/CD • Cloud
+</p>
+
+<div class="hero-img">
+<img src="banner-image.png" alt="DevOps Trainer">
+</div>
+
 </header>
 
 <div class="container">
-    <p>
-        Thank you for visiting our Spring Boot application.
-        We are thrilled to share our DevOps journey with you!
-    </p>
 
-    <p><strong>Explore more and connect with us:</strong></p>
+<p>
+Thank you for visiting our Spring Boot application.  
+We are thrilled to share our DevOps journey with you!
+</p>
 
-    <a href="https://github.com/rakesh-perala" 
-       class="cta-button github-button" target="_blank">
-       🔗 Visit GitHub
-    </a>
+<p><strong>Explore more and connect with us:</strong></p>
 
-    <a href="https://www.youtube.com/@DevOps_Factory" 
-       class="cta-button youtube-button" target="_blank">
-       ▶️ Visit YouTube
-    </a>
+<a href="https://github.com/rakesh-perala" class="cta-button github-button" target="_blank">
+<i class="fa-brands fa-github"></i> GitHub
+</a>
 
-    <a href="https://www.linkedin.com/in/rakesh-perala-95a643321" 
-       class="cta-button linkedin-button" target="_blank">
-       💼 Visit LinkedIn
-    </a>
+<a href="https://www.youtube.com/@DevOps_Factory" class="cta-button youtube-button" target="_blank">
+<i class="fa-brands fa-youtube"></i> YouTube
+</a>
 
-    <!-- 🔥 YOUR SECOND IMAGE -->
-    <div class="profile">
-        <img src="profile-image.png" alt="Rakesh Perala">
-    </div>
+<a href="https://www.linkedin.com/in/rakesh-perala-95a643321" class="cta-button linkedin-button" target="_blank">
+<i class="fa-brands fa-linkedin"></i> LinkedIn
+</a>
+
+<a href="https://www.instagram.com/devopsfactory?igsh=MW1mcHlocG53c29kNQ==" class="cta-button instagram-button" target="_blank">
+<i class="fa-brands fa-instagram"></i> Instagram
+</a>
+
+<a href="https://www.facebook.com/share/18F7ghJaSj/" class="cta-button facebook-button" target="_blank">
+<i class="fa-brands fa-facebook"></i> Facebook
+</a>
+
+<div class="profile">
+<img src="profile-image.png" alt="Rakesh Perala">
+</div>
+
 </div>
 
 <footer>
-    <p>© 2026 DevOps Factory. Built with ❤️ for Cloud & DevOps learners.</p>
+<p>© 2026 DevOps Factory. Built with ❤️ for Cloud & DevOps learners.</p>
 </footer>
 
 </body>
