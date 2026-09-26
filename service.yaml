@@ -9,5 +9,5 @@ spec:
     - protocol: TCP
       port: 80
       targetPort: 8080
-      #odePort: 30000  # Optional: Specify a port between 30000-32767
+      #NodePort: 30000  # Optional: Specify a port between 30000-32767
   type: LoadBalancer
